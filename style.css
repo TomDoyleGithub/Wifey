@@ -2,6 +2,15 @@
     box-sizing: border box;
 }
 
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  @-ms-viewport {
+    width: device-width ;
+  }
+
 body {
     margin: 0px;
     padding: 0px;
@@ -924,5 +933,11 @@ footer {
 
     .tools div button:hover {
         font-size: 16px;
+    }
+
+    @media screen and (max-width: 460px) {
+        .headTitle form {
+            display: none;
+        }
     }
 }
