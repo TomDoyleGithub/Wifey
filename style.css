@@ -950,7 +950,46 @@ footer {
         .headTitle p {
             font-size: 16px;
             grid-column: 1 / 3;
-            bottom: 80px;
+            bottom: 90px;
+        }
+
+        .wumboTwo .WahOne {
+            font-size: 30px;
+        }
+
+        .wumboTwo .WahTwo {
+            font-size: 13px;
+            height: 40px;
+            width: 100px;
+        }
+
+        .wumboTwo .WahThree {
+            display: none;
+        }
+
+        .wumboTwo .WahFour {
+            display: none;
+        }
+
+        .wumboTwo .WahFive {
+            display: none; 
+        }
+
+        .secure .secureText h1 {
+            font-size: 25px;
+        }
+
+        .secure .secureText h3 {
+            font-size: 10px;
+        }
+
+        .wumboTwo {
+            width: 80%;
+            grid-template: 1fr / 3fr 3fr 3fr;
+        }
+
+        .funnyQuote {
+            font-size: 18px;
         }
     }
 }
