@@ -1,0 +1,795 @@
+* {
+    box-sizing: border box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 800px;
+}
+
+main {
+    margin-bottom: 0px;
+}
+
+nav {
+    display: grid;
+    margin: auto;
+    max-width: 100%;
+    height: 100px;
+    grid-template: 100px / repeat(10, 150px);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    object-fit: cover;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 20;
+}
+
+.firstlogo {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    transition: all 100ms linear 0s;
+    color: #2F2E3F;
+    opacity: 100%;
+}
+
+.firstlogo a {
+    color: #2F2E3F;
+    text-decoration: none;
+}
+
+.firstlogo:hover {
+    font-size: 47px;
+    opacity: 90%;
+}
+
+.navlinks {
+    grid-column: 2 / 7;
+    grid-row: 1;
+    display: grid;
+    grid-column-gap: 25px;
+    grid-template: 100px / repeat(5, 80px);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    left: 25px;
+}
+
+.navlinks a {
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 0px solid black;
+    transition: all 100ms linear 0s;
+}
+
+.navlinks a:hover {
+    font-weight: 900;
+    font-size: 14.5px;
+    border-bottom: 1px solid #6A63F6;
+    color: #6A63F6;
+}
+
+.navlinks a:active {
+    font-size: 13px;
+    border-bottom: 0px solid black;
+    font-weight: normal;
+}
+
+.navIcon {
+    visibility:hidden;
+}
+
+.head {
+    display: grid;
+    grid-template: 100% / 800px 1fr;
+    max-width: 85%;
+    margin: auto;
+    height: 450px;
+    padding-top: 140px;
+}
+
+.headData {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.head h1 {
+    color: #2F2E3F;
+    font-size: 65px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.head h3 {
+    color: #2F2E3F; 
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+.head button {
+    border: 3px solid #2F2E3F;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 50px;
+    background-color: white;
+    color: #2F2E3F;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 19px;
+    opacity: 100%;
+    transition: all 100ms linear 0s;
+}
+
+.head button:hover {
+    border: none;
+    background-color: #2F2E3F;
+    color: white;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.itWorks {
+    background-color: #2f2e3f0c;
+    color: #2F2E3F;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 90%;
+    height: 700px;
+    display: grid;
+    grid-template: 100% / 1fr 4fr 1fr;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.itWorks .worksText {
+   grid-row: 1;
+   grid-column: 2;
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 35px;
+   font-family: 'Rubik', sans-serif;
+   font-size: 25px;
+   background: linear-gradient(to right, #2F2E3F 0%, #6A63F6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.itWorks .worksText img {
+    max-width: 55%;
+}
+
+.platformFeat {
+    margin-top: 130px;
+    height: 100px;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.platformFeat p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    background: linear-gradient(to right, #2F2E3F 0%, #6A63F6 100%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+}
+
+.platformFeat h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.8em;
+    text-align: left;
+}
+
+
+.threeBoxes {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 130px;
+    height: 400px;
+    display: grid;
+    grid-template: 100% / 2% 3fr 3fr 3fr 2%;
+    column-gap: 16px;
+}
+
+.threeBoxes .boxOne {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.threeBoxes .boxTwo {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.threeBoxes .boxThree {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+.threeBoxes .boxOne p {
+    background-color: #2F2E3F;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    border-radius: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.threeBoxes .boxTwo p {
+    background-color: #2F2E3F;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    border-radius: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.threeBoxes .boxThree p {
+    background-color: #2F2E3F;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 55px;
+    border-radius: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+.threeBoxes .boxOne p .person {
+    float: right;
+    opacity: 85%;
+}
+
+.threeBoxes .boxTwo p .person {
+    float: right;
+    opacity: 85%;
+}
+
+.threeBoxes .boxThree p .person {
+    float: right;
+    opacity: 85%;
+}
+
+.threeBoxes .boxOne p .circle {
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+.threeBoxes .boxTwo p .circle {
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+.threeBoxes .boxThree p .circle {
+    width: 45px;
+    margin-bottom: 10px;
+}
+
+.toolKit {
+    display: grid;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    height: 700px;
+    grid-template: 100% / 1fr 25fr 25fr 1fr;
+    column-gap: 100px;
+    align-items: center;
+    background-color: #2F2E3F;
+    color: white;
+}
+
+.toolKit .toolText {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.toolKit .toolText h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+}
+
+.toolKit .toolCode {
+    grid-row: 1;
+    grid-column: 3;
+    text-align: center;
+}
+
+.toolKit .toolText h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.8em;
+}
+
+.toolKit .toolText button {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 50px;
+    background-color: white;
+    color: #2F2E3F;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 19px;
+    border: none;
+    opacity: 100%;
+    transition: all 50ms linear 0s;
+}
+
+.toolKit .toolText button:hover {
+    opacity: 85%;
+}
+
+.toolKit .toolCode .toolImg {
+    max-width: 90%;
+}
+
+footer {
+    max-width: 100%;
+    background-image: linear-gradient(to bottom right, #2F2E3F, #6A63F6);
+    color: white;
+    margin: 0px;
+    height: 800px;
+}
+
+.wumboOne {
+    display: grid;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    grid-template: 100% / 1fr 4fr 1fr;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.wumboOne .wumboText {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.wumboOne .wumboText h1 {
+    font-size: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.wumboOne .wumboText button {
+    max-width: 100%;
+    margin: auto;
+    border: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-left: 35px;
+    border-radius: 50px;
+    background-color: white;
+    color: #2F2E3F;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 19px;
+    opacity: 100%;
+    transition: all 100ms linear 0s;
+}
+
+.wumboOne .wumboText button:hover {
+    opacity: 85%;
+}
+
+.wumboTwo {
+    display: grid;
+    height: 200px;
+    grid-template: 1fr 1fr / 3fr 3fr 3fr;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.wumboTwo .WahOne {
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 45px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+}
+
+.wumboTwo .WahTwo {
+    grid-row: 1;
+    grid-column: 3;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    margin-left: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    transition: all 100ms linear 0s;
+}
+
+.wumboTwo .WahTwo:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.wumboTwo .WahThree {
+    grid-row: 2;
+    grid-column: 1;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.wumboTwo .WahFour {
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.wumboTwo .WahFive {
+    grid-row: 2;
+    grid-column: 3;
+    text-align: right;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    opacity: 50%;
+}
+
+
+
+
+
+@media screen and (max-width: 990px) {
+
+    .navlinks {
+        display: none;
+    }
+
+    nav {
+        grid-template: 80px / 1fr 12fr 1fr;
+        height: 80px;
+        max-width: 100%;
+    }
+
+    .firstlogo {
+        text-align: left;
+        font-size: 30px;
+        padding-left: 30px;
+    }
+    
+    .firstlogo:hover {
+        font-size: 32px;
+    }
+
+    .navIcon {
+        visibility: visible;
+        grid-column: 3;
+        margin-left: auto;
+        margin-right: 0px;
+        width: 35px;
+        transition: all 100ms linear 0s;
+        padding-right: 30px;
+    }
+
+    .navIcon:hover {
+        width: 38px;
+    }
+
+    .head {
+        grid-template: 100% / 100%;
+    }
+
+    .threeBoxes {
+        grid-template: 1fr 1fr / 2% 2fr 2fr 2%;
+        row-gap: 1px;
+        margin-top: 180px;
+        margin-bottom: 10%;
+    }
+
+    .threeBoxes .boxOne {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .threeBoxes .boxTwo {
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 0px;
+    }
+    
+    .threeBoxes .boxThree {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .toolKit {
+        margin-top: 300px;
+        grid-template: 1fr 1fr / 1fr 50fr 1fr;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .toolKit .toolText {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .toolKit .toolCode {
+        grid-row: 1;
+        grid-column: 2;
+        text-align: center;
+    }
+
+    .toolKit .toolCode .toolImg {
+        max-width: 50%;
+    }
+
+    .wumboOne .wumboText h1 {
+        font-size: 30px;
+    }
+
+    .wumboOne .wumboText button {
+        font-size: 15px;
+    }
+
+    .wumboOne {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    .wumboTwo {
+        margin-top: 40px;
+    }
+    
+    footer {
+        height: 650px;
+    }
+
+
+}
+
+@media screen and (max-width: 836px) {
+    .toolKit {
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .head h1 {
+        font-size: 40px;
+    }
+
+    .head h3 {
+        font-size: 18px;
+    }
+
+    .itWorks .worksText {
+        font-size: 25px;
+    }
+
+    .itWorks {
+        align-items: flex-start;
+        height: 450px;
+    }
+
+    .platformFeat h3 {
+        font-size: 18px;
+    }
+
+    .threeBoxes {
+        grid-template: 1fr 1fr 1fr / 2% 4fr 2%;
+        row-gap: 1px;
+        margin-top: 190px;
+    }
+
+    .threeBoxes .boxOne {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    
+    .threeBoxes .boxTwo {
+        grid-row: 2;
+        grid-column: 2;
+        margin-top: 0px;
+    }
+    
+    .threeBoxes .boxThree {
+        grid-row: 3;
+        grid-column: 2;
+    }
+
+    .toolKit {
+        margin-top: 600px;
+        grid-template: 1fr 1fr / 80%;
+        justify-content: center;
+    }
+
+    .toolKit .toolText {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .toolKit .toolCode {
+        grid-row: 1;
+        grid-column: 1;
+    } 
+
+    .toolKit .toolText h1 {
+        font-size: 40px;
+    }
+
+    .toolKit .toolText h3 {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .toolKit {
+        margin-top: 800px;
+        grid-template: 1fr 1fr / 80%;
+        justify-content: center;
+    }
+
+    .toolKit .toolText {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .toolKit .toolCode {
+        grid-row: 1;
+        grid-column: 1;
+    } 
+    
+    .toolKit .toolCode .toolImg {
+        max-width: 80%;
+    }
+
+@media screen and (max-width: 375px) {
+    .head h1 {
+        font-size: 30px;
+    }
+
+    .head h3 {
+        font-size: 14px;
+    }
+
+    .itWorks .worksText {
+        font-size: 15px;
+    }
+
+    .itWorks {
+        grid-template: 100% / 1fr 6fr 1fr;
+        height: 300px;
+    }
+
+    .platformFeat h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .threeBoxes {
+        margin-top: 220px;
+    }
+
+    .threeBoxes .boxOne p {
+        font-size: 12px;
+    }
+
+    .threeBoxes .boxTwo p {
+        font-size: 12px;
+    }
+
+    .threeBoxes .boxThree p {
+        font-size: 12px;
+    }
+
+    .threeBoxes .boxOne p .circle {
+        width: 35px;
+    }
+
+    .threeBoxes .boxTwo p .circle {
+        width: 35px;
+    }
+
+    .threeBoxes .boxThree p .circle {
+        width: 35px;
+    }
+
+    .toolKit .toolText h1 {
+        font-size: 30px;
+    }
+
+    .toolKit .toolText h3 {
+        font-size: 13px;
+    }
+
+    .toolKit .toolCode .toolImg {
+        max-width: 90%;
+    }
+
+    .wumboTwo .WahOne {
+        font-size: 30px;
+    }
+
+    .wumboTwo .WahTwo {
+        font-size: 13px;
+        height: 40px;
+        width: 100px;
+    }
+
+    .wumboTwo .WahThree {
+        display: none;
+    }
+
+    .wumboTwo .WahFour {
+        display: none;
+    }
+
+    .wumboTwo .WahFive {
+        display: none; 
+    }
+
+    .toolKit .toolText button {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+
+}
