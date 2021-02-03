@@ -638,7 +638,13 @@ footer {
     font-weight: 200;
     font-style: normal;
     font-size: 18px;
+    transition: all 20ms linear 0s;
 }
+
+.lonky .lonkyOne .textyOne button:hover {
+    background-color: #2f2e3fd7;
+}
+
 
 .lonky .lonkyOne .imgyOne {
     grid-row: 2;
@@ -692,6 +698,11 @@ footer {
     font-weight: 200;
     font-style: normal;
     font-size: 18px;
+    transition: all 20ms linear 0s;
+}
+
+.lonky .lonkyTwo .textyTwo button:hover {
+    background-color: #2f2e3fd7;
 }
 
 .lonky .lonkyTwo .imgyTwo {
@@ -744,6 +755,11 @@ footer {
     font-weight: 200;
     font-style: normal;
     font-size: 18px;
+    transition: all 20ms linear 0s;
+}
+
+.lonky .lonkyThree .textyThree button:hover {
+    background-color: #2f2e3fd7;
 }
 
 .lonky .lonkyThree .imgyThree {
@@ -796,6 +812,11 @@ footer {
     font-weight: 200;
     font-style: normal;
     font-size: 18px;
+    transition: all 20ms linear 0s;
+}
+
+.lonky .lonkyFour .textyFour button:hover {
+    background-color: #2f2e3fd7;
 }
 
 .lonky .lonkyFour .imgyFour {
@@ -860,6 +881,11 @@ footer {
     font-style: normal;
     font-size: 18px;
     margin-top: 40px;
+    transition: all 20ms linear 0s;
+}
+
+.lonky .lonkyFive .lonkyItems button:hover {
+    background-color: #2f2e3fd7;
 }
 
 
