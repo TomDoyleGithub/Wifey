@@ -888,9 +888,212 @@ footer {
     background-color: #2f2e3fd7;
 }
 
+.blockChainGrid {
+    max-width: 90%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    background-color: #2f2e3f0c;
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+    border-radius: 20px;
+}
 
+.blockChainGrid .blockyaaa{
+    text-align: center;
+}
 
+.blockChainGrid .blockyaaa .blockChainImg {
+    width: 60%;
+    height: 60%;
+}
 
+.blockChainGrid .blockChainText {
+    width: 85%;
+}
+
+.blockChainGrid h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    color: #2F2E3F;
+}
+
+.blockChainGrid h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+.apiChainGrid {
+    max-width: 90%;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    background-color: #2f2e3f0c;
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.apiChainGrid .apiyaaa{
+    text-align: center;
+}
+
+.apiChainGrid .apiyaaa .apiChainImg {
+    width: 60%;
+    height: 60%;
+}
+
+.apiChainGrid .apiChainText {
+    width: 85%;
+}
+
+.apiChainGrid h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    color: #2F2E3F;
+}
+
+.apiChainGrid h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+.budChainGrid {
+    max-width: 90%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    background-color: #2f2e3f0c;
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    column-gap: 40px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.budChainGrid .budyaaa{
+    text-align: center;
+}
+
+.budChainGrid .budyaaa .budChainImg {
+    width: 60%;
+    height: 60%;
+}
+
+.budChainGrid .budChainText {
+    width: 85%;
+}
+
+.budChainGrid h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    color: #2F2E3F;
+}
+
+.budChainGrid h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+.leaderBox {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #2F2E3F;
+    margin-bottom: 120px;
+}
+
+.leaderBox .leaderText h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+}
+
+.leaderBox .leaderText h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1.8em;
+}
+
+.staffBox {
+    display: grid;
+    max-width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template: 100% / 300px 300px 300px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 120px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.staffBox .staffCeo {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.staffBox .staffCeo img {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.staffBox .staffCoo img {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.staffBox .staffCto img {
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.staffBox .staffCoo {
+    grid-row: 1;
+    grid-column: 2;
+    
+}
+
+.staffBox .staffCto {
+    grid-row: 1;
+    grid-column: 3;
+    
+}
+
+.staffBox h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    color: #2F2E3F;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.staffBox h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+}
 
 
 
@@ -1018,6 +1221,126 @@ footer {
         height: 650px;
     }
 
+    .blockChainGrid {
+        max-width: 90%;
+        margin-top: 120px;
+        height: 600px;
+        grid-template: 1fr 1fr / 1fr 50fr 1fr;
+    }
+
+    .blockChainGrid .blockChainText {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .blockChainGrid .blockyaaa{
+        text-align: center;
+        grid-row: 1;
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .blockChainGrid .blockyaaa .blockChainImg {
+        width: 40%;
+        height: 40%;
+    }
+
+    .blockChainGrid h1 {
+        font-size: 34px;
+    }
+
+    .blockChainGrid h3 {
+        font-size: 16px;
+    }
+
+    .apiChainGrid {
+        max-width: 90%;
+        margin-top: 120px;
+        height: 600px;
+        grid-template: 1fr 1fr / 1fr 50fr 1fr;
+    }
+
+    .apiChainGrid .apiChainText {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .apiChainGrid .apiyaaa{
+        text-align: center;
+        grid-row: 1;
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .apiChainGrid .apiyaaa .apiChainImg {
+        width: 40%;
+        height: 40%;
+    }
+
+    .apiChainGrid h1 {
+        font-size: 34px;
+    }
+
+    .apiChainGrid h3 {
+        font-size: 16px;
+    }
+
+    .budChainGrid {
+        max-width: 90%;
+        margin-top: 120px;
+        height: 600px;
+        grid-template: 1fr 1fr / 1fr 50fr 1fr;
+    }
+
+    .budChainGrid .budChainText {
+        width: 100%;
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .budChainGrid .budyaaa{
+        text-align: center;
+        grid-row: 1;
+        grid-column: 2;
+        justify-content: center;
+    }
+
+    .budChainGrid .budyaaa .budChainImg {
+        width: 40%;
+        height: 40%;
+    }
+
+    .budChainGrid h1 {
+        font-size: 34px;
+    }
+
+    .budChainGrid h3 {
+        font-size: 16px;
+    }
+
+    .staffBox {
+        grid-template: 300px 300px 300px / 300px;
+        row-gap: 50px;
+    }
+
+    .staffBox .staffCeo {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .staffBox .staffCoo {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .staffBox .staffCto {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+   
 
 }
 
@@ -1147,6 +1470,18 @@ footer {
         grid-row: 13 / 16;
         grid-column: 1;
     }
+
+    .blockChainGrid h3 {
+        padding-bottom: 50px;
+    }
+
+    .apiChainGrid h3 {
+        padding-bottom: 50px;
+    }
+
+    .budChainGrid h3 {
+        padding-bottom: 50px;
+    }
     
 }
 
@@ -1170,6 +1505,27 @@ footer {
     .toolKit .toolCode .toolImg {
         max-width: 80%;
     }
+
+    .blockChainGrid .blockyaaa .blockChainImg {
+        width: 60%;
+        height: 60%;
+        padding-top: 50px;
+    }
+
+    .apiChainGrid .apiyaaa .apiChainImg {
+        width: 60%;
+        height: 60%;
+        padding-top: 50px;
+    }
+
+    .budChainGrid .budyaaa .budChainImg {
+        width: 60%;
+        height: 60%;
+        padding-top: 50px;
+    }
+}
+
+
 
 @media screen and (max-width: 375px) {
     .head h1 {
