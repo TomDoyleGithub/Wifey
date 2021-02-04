@@ -1323,6 +1323,7 @@ footer {
     .staffBox {
         grid-template: 300px 300px 300px / 300px;
         row-gap: 50px;
+        height: 1000px;
     }
 
     .staffBox .staffCeo {
