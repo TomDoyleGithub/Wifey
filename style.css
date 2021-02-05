@@ -103,6 +103,23 @@ nav {
     visibility:hidden;
 }
 
+.dropbtn {
+    visibility: hidden;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 30;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+}
+
+.show {display:block;}
+
 .headTitle {
     display: grid;
     max-width: 85%;
@@ -754,6 +771,10 @@ footer {
         width: 35px;
         transition: all 100ms linear 0s;
         padding-right: 30px;
+    }
+
+    .dropbtn {
+        grid-column: 3;
     }
 
     .navIcon:hover {
