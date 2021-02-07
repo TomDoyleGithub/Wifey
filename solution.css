@@ -1101,7 +1101,7 @@ footer {
     display: grid;
     grid-template: 100% / 2fr 1fr;
     width: 85%;
-    height: 800px;
+    height: 900px;
     margin: auto;
     align-items: center;
 }
@@ -1171,17 +1171,143 @@ footer {
     font-weight: 200;
     font-style: normal;
     font-size: 15px;
+    transition: all 5s ease-in-out 0s;
 }
+
 
 .wifeyCar .wifeyText .wifeyBtns .wbtnOne {
     color: white;
     background-color: black;
+    transition: all 100ms ease-in-out 0s;
+}
+
+.wifeyCar .wifeyText .wifeyBtns .wbtnOne:hover {
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 230px;
+    font-style: italic;
 }
 
 .wifeyCar .wifeyText .wifeyBtns .wbtnTwo {
     color: black;
     background-color: white;
     border: 4px solid black;
+    transition: all 100ms ease-in-out 0s;
+}
+
+.wifeyCar .wifeyText .wifeyBtns .wbtnTwo:hover {
+    width: 230px; 
+    font-style: italic;
+}
+
+.triangle {
+    width: 100%;
+    height: 0;
+    border-bottom: 80px solid rgb(0, 0, 0);
+    border-right: 100px solid transparent;
+    margin-top: 120px;
+}
+
+.bigDash {
+    border: 10px solid black;
+    position: relative;
+    top: 60px;
+}
+
+.smallDash {
+    border: 20px solid black;
+    margin-top: 100px;
+}
+
+.dreamWorld {
+    margin-top: 0px;
+    background-image: url("blackguy.jpeg");
+    color: white;
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+.dreamTitle {
+    display: grid;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.dreamTitle img {
+    margin: auto;
+    width: 45px;
+}
+
+.dreamTitle h1 {
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: black;
+    letter-spacing: 0.3em;
+    text-shadow: 4px 4px;
+}
+
+.dreamWorld .blackBox {
+    max-width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+}
+
+.dreamWorld .blackBox2 {
+    max-width: 30%;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dreamWorld .blob {
+    position: absolute;
+    width: 10%;
+    display: none;
+}
+
+.dreamWorld .listGrid {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    display: grid;
+    grid-template: 100% / 1fr 1fr;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 4px #97979793;
+    font-size: 35px;
+}
+
+.dreamWorld .listGrid .actList {
+    grid-column: 1;
+    margin-left: auto;
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.dreamWorld .listGrid .actList span {
+    font-size: 20px;
+}
+
+.dreamWorld .listGrid .actList2 {
+    grid-column: 2;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.911);
+}
+
+.dreamWorld .listGrid .actList2 span {
+    font-size: 20px;
+}
+
+.dreamWorld .circle {
+    border: 1px dashed rgba(255, 255, 255, 0.637);
+    margin-top: 20px;
+    width: 30%;
 }
 
 
@@ -1196,12 +1322,21 @@ footer {
         display: grid;
         grid-template: 1fr 1fr / 100%;
         width: 85%;
-        height: 1000px;
+        height: 920px;
+        padding-bottom: 400px;
+        text-align: center;
+    }
+
+    .wifeyCar .wifeyText h3 {
+        width: 100%;
     }
 
     .wifeyCar .wifeyImage {
         grid-column: 1;
-        width: 80%;
+        display: grid;
+        width: 60%;
+        object-fit: cover;
+        margin: auto;
     }
 
     .wifeyCar .wifeyImage img {
@@ -1478,6 +1613,10 @@ footer {
         grid-row: 3;
         grid-column: 1;
     }
+
+    .wifeyCar {
+        height: 800px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1492,6 +1631,7 @@ footer {
 
     .wifeyCar {
         text-align: center;
+        height: 1100px;
     }
 
     .wifeyCar .wifeyText {
@@ -1639,7 +1779,7 @@ footer {
         display: grid;
         grid-template: 1fr / 100%;
         width: 85%;
-        height: 1000px;
+        height: 200px;
     }
 
     .toolKit {
@@ -1820,6 +1960,40 @@ footer {
 
     .wivFooter {
         height: 200px;
+    }
+
+    .dreamWorld .listGrid {
+        margin-top: 60px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 85%;
+        display: block;
+        font-family: poppins, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 0px 4px #000000;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .dreamWorld .listGrid .actList {
+        grid-column: 1;
+        margin-left: auto;
+    }
+    
+    .dreamWorld .listGrid .actList span {
+        font-size: 15px;
+    }
+    
+    .dreamWorld .listGrid .actList2 {
+        grid-column: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .dreamWorld .listGrid .actList2 span {
+        font-size: 15px;
     }
 
 }
