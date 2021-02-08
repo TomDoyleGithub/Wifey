@@ -1403,8 +1403,107 @@ footer {
 }
 
 .positions {
-    display: none;
+    display: grid;
+    max-width: 85%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-bottom: 300px;
 }
+
+.positions .pTitle {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.8px;
+    -webkit-text-stroke-color: white;
+    letter-spacing: 0.2em;
+    text-shadow: 4px 4px;
+}
+
+.positions .pGrid {
+    margin-top: 3%;
+    height: 120px;
+    display: grid;
+    grid-template: 100% / minmax(250px, 300px) minmax(250px, 300px) minmax(250px, 300px);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 5%;
+    justify-content: center;
+    text-align: center;
+}
+
+.positions .pGrid h2 {
+    font-family: 'Rubik', sans-serif;
+}
+
+.positions .pGrid span {
+    border-bottom: 1px solid black;
+}
+
+.positions .pGrid h3 {
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 2em;
+}
+
+.positions .pGrid .pgrid1 {
+    background-color: #2f2e3f0c;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.positions .pGrid .pgrid2 {
+    background-color: #2f2e3f0c;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.positions .pGrid .pgrid3 {
+    background-color: #2f2e3f0c;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.positions button {
+    height: 50px;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    box-shadow: 0px;
+    transition: all 100ms ease-in-out 0s; 
+}
+
+.positions button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 8px 8px black;
+}
+
 
 
 
@@ -1737,6 +1836,29 @@ footer {
     .openDream .openText {
         padding-top: 20px;
     }
+
+    .positions {
+        height: 700px;
+    }
+
+    .positions .pGrid {
+        margin-top: 3%;
+        height: 750px;
+        display: grid;
+        grid-template: 200px 200px 200px / 100%;
+        row-gap: 40px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 5%;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .positions button {
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -1940,6 +2062,29 @@ footer {
         height: 60%;
         padding-top: 50px;
     }
+
+
+    .positions .pGrid {
+        margin-top: 3%;
+        height: 750px;
+        display: grid;
+        grid-template: 250px 250px 250px / 100%;
+        row-gap: 50px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .positions button {
+        margin-top: 150px;
+    }
+
+    .positions {
+        height: 800px;
+    }
 }
 
 
@@ -2121,5 +2266,36 @@ footer {
 
     .openDream .openText button {
         width: 150px;
+    }
+
+    .positions .pGrid {
+        margin-top: 3%;
+        height: 800px;
+        display: grid;
+        grid-template: 290px 290px 290px / 90%;
+        row-gap: 50px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .positions .pTitle {
+        font-size: 30px;
+    }
+
+    .positions button {
+        margin-top: 200px;
+    }
+
+    .positions {
+        height: 850px;
+    }
+
+    .positions button {
+        width: 60%;
+    }
 
 }
