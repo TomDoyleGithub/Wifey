@@ -73,6 +73,7 @@ nav {
     left: 25px;
 }
 
+
 .navlinks a {
     font-family: poppins, sans-serif;
     font-weight: 400;
@@ -99,7 +100,7 @@ nav {
     font-weight: normal;
 }
 
-.navIcon {
+.noob .navIcon {
     visibility:hidden;
 }
 
@@ -763,7 +764,7 @@ footer {
         font-size: 32px;
     }
 
-    .navIcon {
+    .noob .navIcon {
         visibility: visible;
         grid-column: 3;
         margin-left: auto;

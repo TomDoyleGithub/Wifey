@@ -1504,6 +1504,431 @@ footer {
     box-shadow: 8px 8px black;
 }
 
+.contactSection {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #ffffff;
+}
+
+
+.contactSection .contactHeader {
+    width: 100%;
+    text-align: center;
+}
+
+.contactSection .contactHeader .back {
+    width: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.contactSection .contactHeader .back:hover {
+    width: 50px;
+}
+
+
+.contactSection .contactHeader h1 {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    -webkit-text-fill-color: rgb(0, 0, 0); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 40px;
+}
+
+.contactSection .contactHeader h3 {
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+}
+
+.contactSection .contactInfo {
+    margin-top: 50px;
+    height: 150px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 100% / 1fr 1fr 1fr;
+    column-gap: 30px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contactSection .contactInfo .onea {
+    background-color: none;
+    border-radius: 20px;
+    transition: all 100ms ease-in-out;
+}
+
+
+.contactSection .contactInfo .oneb {
+    background-color: none;
+    border-radius: 20px;
+    transition: all 100ms ease-in-out;
+}
+
+
+
+.contactSection .contactInfo .onec {
+    background-color: none;
+    border-radius: 20px;
+    transition: all 100ms ease-in-out;
+}
+
+
+
+.contactSection .contactInfo p {
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    font-size: 13px;
+    background-color: none;
+    transition: all 100ms ease-in-out;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.contactSection .contactInfo img {
+    width: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.contactSection .formBox {
+    background-color: white;
+    margin-top: 50px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    box-shadow: 8px 8px black;
+    border: 6px solid black;
+}
+
+
+.formBox .formGrid {
+    width: 85%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    column-gap: 50px;
+    padding-top: 40px;
+}
+
+.formBox .formGrid h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+
+.formBox .formGrid .nameField {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.formBox .formGrid .mailField {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.formBox .formGrid .phoneField {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+.formBox .formGrid .messageField {
+    grid-row: 2 / 5;
+    grid-column: 2;
+}
+
+.formBox .formGrid .messageField textarea {
+    margin-top: 10px;
+    width: 81%;
+    height: 73%;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #2f2e3f0c;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 25px;
+    resize: none;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    transition: all 100ms ease-in-out;
+}
+
+.formBox .formGrid .messageField textarea:hover {
+    background-color: white;
+    border: 2px solid #2f2e3f0c;
+}
+
+.formBox .formGrid .messageField label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.formBox .formGrid .nameField input {
+    margin-top: 10px;
+    width: 85%;
+    height: 40%;
+    border-radius: 8px;
+    padding-left: 50px;
+    border: 2px solid white;
+    background-color: #2f2e3f0c;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    transition: all 100ms ease-in-out;
+}
+
+.formBox .formGrid .nameField input:hover {
+    background-color: white;
+    border: 2px solid #2f2e3f0c;
+}
+
+.formBox .formGrid .nameField label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.formBox .formGrid .nameField img {
+    width: 20px;
+    opacity: 50%;
+    position: relative;
+    bottom: 38px;
+    left: 15px;
+}
+
+.formBox .formGrid .mailField input {
+    margin-top: 10px;
+    width: 85%;
+    height: 40%;
+    border-radius: 8px;
+    padding-left: 50px;
+    border: 2px solid white;
+    background-color: #2f2e3f0c;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    transition: all 100ms ease-in-out;
+}
+
+.formBox .formGrid .mailField input:hover {
+    background-color: white;
+    border: 2px solid #2f2e3f0c;
+}
+
+.formBox .formGrid .mailField label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.formBox .formGrid .mailField img {
+    width: 20px;
+    opacity: 50%;
+    position: relative;
+    bottom: 38px;
+    left: 15px;
+}
+
+.formBox .formGrid .phoneField input {
+    margin-top: 10px;
+    width: 85%;
+    height: 40%;
+    border-radius: 8px;
+    padding-left: 50px;
+    border: 2px solid white;
+    background-color: #2f2e3f0c;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    transition: all 100ms ease-in-out;
+}
+
+.formBox .formGrid .phoneField input:hover {
+    background-color: white;
+    border: 2px solid #2f2e3f0c;
+}
+
+.formBox .formGrid .phoneField label {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.formBox .formGrid .phoneField img {
+    width: 20px;
+    opacity: 50%;
+    position: relative;
+    bottom: 38px;
+    left: 15px;
+}
+
+.services {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.services h2 {
+    grid-row: 1;
+    grid-column: 1;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
+.services .web1 {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: center;
+    background-color: #2f2e3f0c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    transition: all 100ms ease-in-out;
+}
+
+.services .web1:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.services .web1:active {
+    font-size: 12px;
+}
+
+.services .web2 {
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    background-color: #2f2e3f0c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;  
+    width: 120%; 
+    transition: all 100ms ease-in-out;
+}
+
+.services .web2:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.services .web2:active {
+    font-size: 12px;
+}
+
+.services .web3 {
+    grid-row: 2;
+    grid-column: 3;
+    text-align: center;
+    background-color: #2f2e3f0c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    width: 90%;
+    position: relative;
+    left: 30px;
+    transition: all 100ms ease-in-out;
+}
+
+.services .web3:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.services .web3:active {
+    font-size: 12px;
+}
+
+.services .web4 {
+    grid-row: 2;
+    grid-column: 4;
+    text-align: center;
+    background-color: #2f2e3f0c;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    width: 60%;
+    position: relative;
+    left: 15px;
+    transition: all 100ms ease-in-out;
+}
+
+.services .web4:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.services .web4:active {
+    font-size: 12px;
+}
+
+.send {
+    grid-row: 2;
+    grid-column: 2;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;  
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.795);
+    font-style: italic;
+}
+
+
+
 
 
 
