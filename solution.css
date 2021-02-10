@@ -16,6 +16,12 @@ main {
     margin-bottom: 0px;
 }
 
+.test p {
+    opacity: 0%;
+}
+
+
+
 nav {
     display: grid;
     margin: auto;
@@ -2877,6 +2883,7 @@ footer {
         margin-top: 200px;
     }
 
+
     .positions {
         height: 850px;
     }
@@ -2894,6 +2901,14 @@ footer {
     
     .contactSection .contactHeader .back:hover {
         width: 30px;
+    }
+
+    .contactSection .contactHeader h1 {
+        font-size: 35px;
+    }
+
+    .contactSection .contactHeader h3 {
+        font-size: 15px;
     }
 
 }
@@ -2922,5 +2937,11 @@ footer {
         display: grid;
         grid-template: 15px 100px / 80%;
         height: 90px;
+    }
+
+    .contactSection .formBox {
+        width: 90%;
+        box-shadow: none;
+        border: 4px solid black;
     }
 }
